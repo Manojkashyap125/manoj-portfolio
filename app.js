@@ -81,9 +81,19 @@
     copyEmail(this.getAttribute('data-email') || 'manojmuniraju31@gmail.com');
   });
 
-  /* tip form → native POST straight to FormSubmit (nothing to hang or fail silently) */
-  document.getElementById('tipForm').addEventListener('submit', function () {
-    say('SWINGING YOUR MESSAGE ACROSS THE CITY… 🕸');
+  /* tip form → opens the visitor's mail app, pre-addressed to you (no middleman to break) */
+  document.getElementById('tipForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form = e.target;
+    var name = form.querySelector('[name=name]').value.trim();
+    var email = form.querySelector('[name=email]').value.trim();
+    var msg = form.querySelector('[name=message]').value.trim();
+    var subject = encodeURIComponent('MANOJ #1 portfolio — tip from ' + name);
+    var body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
+    say('OPENING YOUR MAIL APP… HIT SEND! 📧');
+    setTimeout(function () {
+      window.location.href = 'mailto:manojmuniraj31@gmail.com?subject=' + subject + '&body=' + body;
+    }, 600);
   });
 
   /* page number by scroll (4 chapters) */
