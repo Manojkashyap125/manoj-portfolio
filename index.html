@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MANOJ! #1 — A Spider-Powered Portfolio</title>
+<meta name="description" content="Manoj #1: your friendly neighborhood developer. Origin story, powers, real GitHub adventures and the spider-signal. An unofficial comic-book portfolio." />
+<meta name="theme-color" content="#D62828" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23D62828' stroke='black' stroke-width='6'/><ellipse cx='50' cy='58' rx='11' ry='15' fill='black'/><circle cx='50' cy='40' r='7' fill='black'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<div id="flash" aria-hidden="true"></div>
+
+<div class="publisher">MANOJ COMICS GROUP ★ RATED E FOR EVERYONE ★ APPROVED BY THE HIRING AUTHORITY</div>
+
+<!-- ================= COVER ================= -->
+<header class="cover" id="top">
+  <div class="cover-top">
+    <div class="issue-box"><span>MANOJ<br/>COMICS</span><b>#1</b></div>
+    <div class="masthead">
+      <h1>MANOJ!</h1>
+      <p class="tagline">★ YOUR FRIENDLY NEIGHBORHOOD DEVELOPER ★</p>
+    </div>
+    <div class="price-burst" aria-hidden="true"><span>STILL<br/>ONLY<br/><b>12¢!</b></span></div>
+  </div>
+
+  <div class="cover-art">
+    <svg class="web" viewBox="0 0 200 200" aria-hidden="true">
+      <g stroke="#111" stroke-width="3" fill="none">
+        <path d="M0,0 L200,200 M200,0 L0,200 M100,0 L100,200 M0,100 L200,100"/>
+        <circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="55"/><circle cx="100" cy="100" r="80"/>
+      </g>
+    </svg>
+    <div class="emblem" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <g stroke="#111" stroke-width="5" fill="none" stroke-linecap="round">
+          <path d="M48,50 Q30,42 18,24"/><path d="M52,50 Q70,42 82,24"/>
+          <path d="M47,55 Q27,52 13,42"/><path d="M53,55 Q73,52 87,42"/>
+          <path d="M47,61 Q27,65 15,79"/><path d="M53,61 Q73,65 85,79"/>
+          <path d="M48,66 Q32,76 26,92"/><path d="M52,66 Q68,76 74,92"/>
+        </g>
+        <ellipse cx="50" cy="60" rx="10" ry="15" fill="#111"/>
+        <circle cx="50" cy="41" r="8" fill="#111"/>
+        <circle cx="46.5" cy="39" r="2.4" fill="#fff"/><circle cx="53.5" cy="39" r="2.4" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="bubble b1">LOOK OUT! HERE COMES A <b>JOB-READY DEVELOPER!</b></div>
+    <div class="bubble b2">WILL HE SHIP ON TIME?<br/><b>'NUFF SAID!</b></div>
+    <div class="burst cb1" aria-hidden="true"><span>FIRST<br/>APPEARANCE!</span></div>
+    <div class="burst cb2" aria-hidden="true"><span>28 CITIZENS<br/>CAN'T BE WRONG!</span></div>
+  </div>
+
+  <p class="caption">Peter… er, <b>MANOJ PARKER-ISH</b> was just an ordinary MCA student — until a radioactive <b>DEADLINE</b> bit him! Now he fights bugs by day and ships features by night!</p>
+
+  <div class="cover-cta">
+    <a class="btn" href="#origin">READ ISSUE #1 ↓</a>
+    <button class="btn alt" id="signalTop">SEND SPIDER-SIGNAL</button>
+  </div>
+
+  <div class="hero-id rv">
+    <div class="profile-pic" role="img" aria-label="Comic hero portrait of Manoj in a red spider mask">
+      <svg viewBox="0 0 120 120">
+        <path d="M14,120 Q16,96 40,90 L80,90 Q104,96 106,120 Z" fill="#1B4F9C" stroke="#111" stroke-width="4"/>
+        <path d="M52,92 L52,104 M68,92 L68,104" stroke="#111" stroke-width="3"/>
+        <circle cx="60" cy="52" r="38" fill="#D62828" stroke="#111" stroke-width="4"/>
+        <g stroke="#7a1010" stroke-width="2" fill="none">
+          <path d="M60,14 L60,90 M22,52 L98,52 M33,24 L87,80 M87,24 L33,80"/>
+          <circle cx="60" cy="52" r="14"/><circle cx="60" cy="52" r="26"/>
+        </g>
+        <path d="M24,52 L50,44 L46,66 L26,64 Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M96,52 L70,44 L74,66 L94,64 Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="hero-id-txt">
+      <span>HERO FILE #001 — PROFILE PIC</span>
+      <h3>SECRET IDENTITY: MANOJ</h3>
+      <p>BCA grad · MCA student · friendly neighborhood developer. Bitten by a radioactive deadline — now he never misses one.</p>
+    </div>
+  </div>
+  <p class="handnote">start here, true believer!! ⤵</p>
+</header>
+
+<!-- ================= INDEX NAV ================= -->
+<nav class="index" aria-label="Issue index">
+  <span class="idx-label">IN THIS ISSUE:</span>
+  <a href="#origin">ORIGIN</a>
+  <a href="#powers">POWERS</a>
+  <a href="#adventures">ADVENTURES</a>
+  <a href="#signal">SIGNAL</a>
+  <span class="page-no" id="pageNo">PAGE 1/4</span>
+</nav>
+
+<main>
+  <!-- ================= ORIGIN ================= -->
+  <section id="origin" class="chapter">
+    <div class="ch-head rv"><span class="pg">PAGE 1</span><h2>ORIGIN STORY!</h2></div>
+    <div class="panels three">
+      <div class="panel rv">
+        <p class="narr">Our story begins at an ordinary computer science classroom…</p>
+        <h3>BCA COMPUTER SCIENCE</h3>
+        <p>Young Manoj discovers two great truths: semicolons matter, and coffee is a food group. Graduates hungry for more.</p>
+        <span class="sfx">CLICK-CLACK!</span>
+      </div>
+      <div class="panel rv">
+        <p class="narr">Then — fate strikes in the form of higher education!</p>
+        <h3>MCA: THE BITE</h3>
+        <p>A radioactive syllabus grants him strange new powers: DBMS vision, OS strength, and an AI-sense that tingles near deadlines. CGPA 8.6.</p>
+        <span class="sfx">ZZZT!</span>
+      </div>
+      <div class="panel rv">
+        <p class="narr">But with great power comes…</p>
+        <h3>400+ DSA BATTLES</h3>
+        <p>Night after night, our hero trains against the Leet Legion. Arrays fall. Graphs surrender. Dynamic programming… is still at large.</p>
+        <span class="sfx">THWIP!</span>
+      </div>
+    </div>
+    <p class="meanwhile">— MEANWHILE, ACROSS TOWN… —</p>
+  </section>
+
+  <!-- ================= POWERS ================= -->
+  <section id="powers" class="chapter blue">
+    <div class="ch-head rv"><span class="pg">PAGE 2</span><h2>SPIDER-POWERS!</h2></div>
+    <p class="caption light rv">As recorded in the Official Handbook: every hero gets a power grid. Here is his, graded 1–7:</p>
+    <div class="grid2">
+      <div class="pgrid rv">
+        <div class="prow"><label>INTELLIGENCE</label><div class="dots" data-v="6"></div></div>
+        <div class="prow"><label>CODING SPEED</label><div class="dots" data-v="6"></div></div>
+        <div class="prow"><label>DEBUGGING</label><div class="dots" data-v="5"></div></div>
+        <div class="prow"><label>STAMINA</label><div class="dots" data-v="7"></div></div>
+        <div class="prow"><label>TEAMWORK</label><div class="dots" data-v="6"></div></div>
+        <div class="prow"><label>DOCUMENTATION</label><div class="dots" data-v="4"></div></div>
+      </div>
+      <div class="sidekick rv">
+        <div class="fuel">
+          <h3>⚡ POWERED BY</h3>
+          <ul>
+            <li><b>FILTER COFFEE</b><span>98%</span></li>
+            <li><b>2AM BUILDS</b><span>87%</span></li>
+            <li><b>DOCS DIVING</b><span>76%</span></li>
+            <li><b>CONSOLE.LOG</b><span>100%</span></li>
+          </ul>
+        </div>
+        <div class="mission">
+          <h3>🎯 CURRENT MISSION</h3>
+          <p><b>SRISWASTIKSERVICES</b> — employed. Status: <b>ON DUTY ✓</b></p>
+          <div class="mbar"><i style="width:100%"></i></div>
+          <p class="msub">NOT STUDYING — SHIPPING FOR REAL ↓</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADVENTURES ================= -->
+  <section id="adventures" class="chapter">
+    <div class="ch-head rv"><span class="pg">PAGE 3</span><h2>SPECTACULAR ADVENTURES!</h2></div>
+    <p class="caption rv">READ IT LIKE A MANGA — PANEL BY PANEL. EACH FILE OPENS ITS REAL REPO ↓</p>
+    <div class="storyflow">
+      <article class="story rv">
+        <p class="narr">FILE #1 — THE CITY NETWORK IS UNDER ATTACK…</p>
+        <div class="frames">
+          <div class="frame art a-red"><span class="sno">#1</span><span class="big-sfx">SCAN!</span><span class="vsfx">ゴゴゴ…</span></div>
+          <div class="frame talk">
+            <div class="say">An intrusion alert?! Not on my watch!</div>
+            <p><b>NIDS-IPS</b> — a network intrusion detection &amp; prevention system standing guard over the city. <b>Feat:</b> Python.</p>
+            <a href="https://github.com/Manojkashyap125/NIDS-IPS" target="_blank" rel="noopener">OPEN REPO ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="story flip rv">
+        <p class="narr">FILE #2 — MEANWHILE, AT THE CAFÉ…</p>
+        <div class="frames">
+          <div class="frame art a-brown"><span class="sno">#2</span><span class="big-sfx">BREW!</span><span class="vsfx">アツアツ!</span></div>
+          <div class="frame talk">
+            <div class="say">One fresh-brewed website, coming right up!</div>
+            <p><b>COFFEE</b> — a hot web build, served steaming. Smells like HTML. <b>Feat:</b> HTML.</p>
+            <a href="https://github.com/Manojkashyap125/coffee" target="_blank" rel="noopener">OPEN REPO ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="story rv">
+        <p class="narr">FILE #3 — THE VILLAIN FLEES… BY AIR?!</p>
+        <div class="frames">
+          <div class="frame art a-sky"><span class="sno">#3</span><span class="big-sfx">WHOOSH!</span><span class="vsfx">ビューン!</span></div>
+          <div class="frame talk">
+            <div class="say">He's getting away! Quick — book that flight!</div>
+            <p><b>FLIGHT BOOKING</b> — a full booking flow so no villain (or user) ever waits. <b>Feat:</b> HTML.</p>
+            <a href="https://github.com/Manojkashyap125/flight_booking" target="_blank" rel="noopener">OPEN REPO ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="story flip rv">
+        <p class="narr">FILE #4 — A SEALED FOLDER HUMS IN THE DARK…</p>
+        <div class="frames">
+          <div class="frame art a-dark"><span class="sno">#4</span><span class="big-sfx">…?!</span><span class="vsfx">ザワザワ…</span></div>
+          <div class="frame talk">
+            <div class="say">What IS this file…? Even my AI-sense can't read it!</div>
+            <p><b>NEXORA</b> — a mysterious archive entry. Origin unknown. Investigation ongoing. <b>Feat:</b> ???</p>
+            <a href="https://github.com/Manojkashyap125/NEXORA" target="_blank" rel="noopener">OPEN REPO ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="vault-cta rv">
+      <a class="btn" href="https://github.com/Manojkashyap125" target="_blank" rel="noopener">SEE FULL VAULT ON GITHUB ↗</a>
+    </div>
+  </section>
+
+  <!-- ================= SIGNAL ================= -->
+  <section id="signal" class="chapter signal">
+    <div class="ch-head rv"><span class="pg">PAGE 4</span><h2>THE SPIDER-SIGNAL!</h2></div>
+    <p class="caption rv">The city needs a developer! Shine the signal — he replies within 24 hours:</p>
+    <button class="signal-btn rv" id="signalBig" aria-label="Flash the spider signal">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <g stroke="#111" stroke-width="6" fill="none" stroke-linecap="round">
+          <path d="M48,50 Q30,42 18,24"/><path d="M52,50 Q70,42 82,24"/>
+          <path d="M47,55 Q27,52 13,42"/><path d="M53,55 Q73,52 87,42"/>
+          <path d="M47,61 Q27,65 15,79"/><path d="M53,61 Q73,65 85,79"/>
+          <path d="M48,66 Q32,76 26,92"/><path d="M52,66 Q68,76 74,92"/>
+        </g>
+        <ellipse cx="50" cy="60" rx="10" ry="15" fill="#111"/>
+        <circle cx="50" cy="41" r="8" fill="#111"/>
+      </svg>
+      <span>FLASH THE SIGNAL!</span>
+    </button>
+    <div class="c-row rv">
+      <button class="btn" id="copyEmail" data-email="manojmuniraju31@gmail.com">COPY: MANOJMUNIRAJU31@GMAIL.COM</button>
+      <a class="btn alt" href="https://github.com/Manojkashyap125" target="_blank" rel="noopener">GITHUB ↗</a>
+      <a class="btn alt" href="https://linkedin.com/in/manoj-m-1a427237a" target="_blank" rel="noopener">LINKEDIN ↗</a>
+    </div>
+    <p class="alt-mail rv">hiring inbox above ☝ &nbsp;·&nbsp; personal inbox: <b>manojmuniraj31@gmail.com</b> (everything else)</p>
+    <form class="tip-form rv" id="tipForm">
+      <label>OR SLIP A NOTE UNDER THE DOOR →</label>
+      <div class="frow">
+        <input required maxlength="40" placeholder="codename (your name)" aria-label="Your name" />
+        <input required maxlength="60" placeholder="email" type="email" aria-label="Your email" />
+        <button class="btn" type="submit">THWIP IT →</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="next">NEXT ISSUE: <b>THE JOB HUNT</b> — DON'T MISS IT, TRUE BELIEVER!</div>
+  <p class="colophon">© 2026 Manoj Comics ★ drawn with CSS, no spandex ★ a totally unofficial parody — not affiliated with any actual spider-people ★ EXCELSIOR!</p>
+  <button id="topBtn" title="Web back up!">↑ WEB UP!</button>
+</footer>
+
+<div id="toast" class="hidden" role="status"></div>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
