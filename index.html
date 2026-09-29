@@ -236,8 +236,11 @@
     <form class="tip-form rv" id="tipForm">
       <label>OR SLIP A NOTE UNDER THE DOOR →</label>
       <div class="frow">
-        <input required maxlength="40" placeholder="codename (your name)" aria-label="Your name" />
-        <input required maxlength="60" placeholder="email" type="email" aria-label="Your email" />
+        <input name="name" required maxlength="40" placeholder="codename (your name)" aria-label="Your name" />
+        <input name="email" required maxlength="60" placeholder="email" type="email" aria-label="Your email" />
+      </div>
+      <div class="frow">
+        <textarea name="message" required maxlength="1000" rows="3" placeholder="your message, citizen…" aria-label="Your message"></textarea>
         <button class="btn" type="submit">THWIP IT →</button>
       </div>
     </form>

@@ -197,6 +197,8 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:.03em;font-weight:400}
 .tip-form label{font-family:var(--disp);font-size:20px;letter-spacing:.05em;display:block;margin-bottom:12px}
 .frow{display:flex;gap:12px;flex-wrap:wrap}
 .tip-form input{flex:1;min-width:170px;font-family:var(--body);font-weight:700;font-size:15px;padding:12px;border:var(--bd);background:var(--paper)}
+.tip-form textarea{flex:1;min-width:220px;font-family:var(--body);font-weight:700;font-size:15px;padding:12px;border:var(--bd);background:var(--paper);resize:vertical}
+.tip-form button[disabled]{opacity:.6;cursor:wait}
 
 /* ---------- footer / toast ---------- */
 footer{background:var(--ink);color:#fff;text-align:center;position:relative;padding-bottom:34px}

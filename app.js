@@ -81,11 +81,36 @@
     copyEmail(this.getAttribute('data-email') || 'manojmuniraju31@gmail.com');
   });
 
-  /* tip form */
+  /* tip form → real inbox via FormSubmit (free, no backend needed) */
   document.getElementById('tipForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    say('TIP RECEIVED, CITIZEN! THWIP! 🕸');
-    e.target.reset();
+    var form = e.target;
+    var btn = form.querySelector('button[type=submit]');
+    var payload = {
+      name: form.querySelector('[name=name]').value,
+      email: form.querySelector('[name=email]').value,
+      message: form.querySelector('[name=message]').value,
+      _subject: 'MANOJ #1 portfolio — new tip!'
+    };
+    btn.disabled = true;
+    var oldLabel = btn.textContent;
+    btn.textContent = 'SWINGING…';
+    fetch('https://formsubmit.co/ajax/manojmuniraju31@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (r) {
+      if (!r.ok) throw new Error('bad response');
+      return r.json();
+    }).then(function () {
+      say('TIP RECEIVED, CITIZEN! It landed in my inbox! 🕸');
+      form.reset();
+    }).catch(function () {
+      say('SIGNAL JAMMED! Email me directly instead 📧');
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+    });
   });
 
   /* page number by scroll (4 chapters) */
